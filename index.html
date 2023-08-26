@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A CrossFit Miskolcban nem érdekel minket, hogy milyen vagy: nagy vagy kicsi, lassú vagy gyors, formában vagy, vagy azon kívül. Ha nálunk vagy, segíteni és szurkolni fogunk neked!"
+    />
+    <meta
+      property="og:title"
+      content="CrossFit Miskolc - Miskolc első és egyetlen CrossFit terme"
+    />
+    <meta
+      property="og:description"
+      content="A CrossFit Miskolcban nem érdekel minket, hogy milyen vagy: nagy vagy kicsi, lassú vagy gyors, formában vagy, vagy azon kívül. Ha nálunk vagy, segíteni és szurkolni fogunk neked!"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="http://www.crossfitmiskolc.hu/cfm_main.jpg"
+    />
+    <meta property="og:url" content="http://www.crossfitmiskolc.hu/" />
+
+    <title>CrossFit Miskolc</title>
+    <link rel="icon" href="css/images/cfm_cube_new.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Inter:wght@400;700&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar bg-dark navbar-expand-lg fixed-top fs-6 p-0 border-bottom border-primary"
+      id="navbar_border_width"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"
+          ><img src="css/images/cfm_cube_new.png" alt="logo" width="40"
+        /></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="what_is_crossfit.html"
+                >Mi a CrossFit?</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Órarend</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prices.html">Áraink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="drop-in.html">Drop in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="english.html">English</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://www.motibro.com/login?club=crossfit-miskolc"
+                >Belépés</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-secondary"
+                id="freetrial_btn"
+                href="freetrial.html"
+                >Ingyenes próbalecke</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container-fluid bg-image p-0 mt-0 mt-xxl-5 d-flex flex-column justify-content-end align-items-center"
+      style="
+        background-image: url('css/images/group_bg_op_big.webp');
+        height: 700px;
+      "
+    >
+      <h1 class="fw-bold text-center spin">
+        SLEEP. EAT.
+        <span class="crossfit fw-bold">CROSSFIT.</span> REPEAT.
+      </h1>
+      <h2 class="fs-5 mb-3 text-center">
+        A megfelelő pillanat a kezdésre: MOST van!
+      </h2>
+      <p class="d-inline-flex gap-1">
+        <a
+          class="btn btn-outline-light text-center mb-3"
+          role="button"
+          id="btn_freetrial"
+          href="freetrial.html"
+        >
+          <span class="bi bi-calendar2-check-fill"></span>
+
+          Jelentkezz ingyenes próbaleckére!
+        </a>
+      </p>
+    </div>
+    <!-- cards -->
+    <div
+      class="container-fluid bg-image pb-2 pt-3"
+      style="background-image: url('css/images/dark-texture-bg.webp')"
+    >
+      <div class="row row-cols-md-3 g-4 ms-1 me-1">
+        <div class="col">
+          <div
+            class="card text-bg-dark border-secondary border_cfm grow"
+            data-aos="fade-right"
+          >
+            <img
+              src="css/images/ohs_gabi.webp"
+              class="card-img-top"
+              alt="picture of overhead squat"
+            />
+            <div class="card-body">
+              <h5 class="card-title crossfit fw-bold fs-5">Mi a CrossFit?</h5>
+              <p class="card-text">
+                Röviden: folyamatosan változó, magas intenzitású funkcionális
+                edzés. Emellett az edzések minősége és a szórakozás is fontos
+                számunkra.
+              </p>
+              <a
+                href="what_is_crossfit.html"
+                class="btn btn-secondary fs_button"
+                ><span>Tovább </span
+                ><span class="no-line-break">
+                  olvasok
+                  <i
+                    class="bi bi-arrow-bar-right"
+                    style="font-size: 13px"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card text-bg-dark border-secondary border_cfm grow"
+            data-aos="fade-up"
+          >
+            <img
+              src="css/images/lesson-types-jav.webp"
+              class="card-img-top card_pesson_types"
+              alt="picture of a group of mother and her two daughters with kettlebells"
+            />
+            <div class="card-body">
+              <h5 class="card-title crossfit fw-bold fs-5">Óratípusaink</h5>
+              <p class="card-text">
+                A megszokott WODokon kívül speciális órákkal is várunk, így
+                kicsitől az idősig mindenki megtalálja a neki megfelelő
+                edzésformát.
+              </p>
+              <a
+                href="schedule.html#lesson-types"
+                class="btn btn-secondary fs_button"
+                ><span>Tovább </span
+                ><span class="no-line-break">
+                  olvasok
+                  <i
+                    class="bi bi-arrow-bar-right"
+                    style="font-size: 13px"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card text-bg-dark border-secondary border_cfm grow"
+            data-aos="fade-left"
+          >
+            <img
+              src="css/images/agi-tgu.webp"
+              class="card-img-top"
+              alt="picture of overhead squat"
+            />
+            <div class="card-body">
+              <h5 class="card-title crossfit fw-bold fs-5">
+                Hogyan vágj bele?
+              </h5>
+              <p class="card-text">
+                Ha még soha nem jártál CrossFit edzésen, akkor neked szólnak a
+                kezdőkre vonatkozó információink és a gyakran ismételt
+                kérdésekre adott válaszaink.
+              </p>
+              <a
+                href="what_is_crossfit.html#beginners-section"
+                class="btn btn-secondary fs_button"
+                ><span>Tovább </span
+                ><span class="no-line-break">
+                  olvasok
+                  <i
+                    class="bi bi-arrow-bar-right"
+                    style="font-size: 13px"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mit kínálunk -->
+      <div class="container">
+        <h5 class="crossfit fw-bold fs-5 mb-4 mt-5 centered_h5">
+          Amit kínálunk
+        </h5>
+        <div class="row row-cols-md-3 g-4 ms-1 me-1">
+          <div class="col" data-aos="fade-right">
+            <p class="text-center">
+              <img
+                src="css/images/1.png"
+                width="100"
+                alt="graphic of a coach"
+              />
+            </p>
+            <h5 class="text-info text-center mb-1">Képzett edzők</h5>
+            <p class="text-info text-center">
+              <br />Nem csak a funkcionális edzés, hanem spaciálisan a CrossFit
+              területén képzett edzőink várnak minden órán, így biztos lehetsz
+              benne, hogy nálunk a legjobb szolgáltatást kapod ebben a sportban.
+            </p>
+          </div>
+          <div class="col" data-aos="fade-up">
+            <p class="text-center">
+              <img
+                src="css/images/3.png"
+                width="100"
+                alt="graphic of a coach"
+              />
+            </p>
+            <h5 class="text-info text-center mb-1">Személyre szabottság</h5>
+            <p class="text-info text-center">
+              <br />Bár edzéseink csoportosak, nálunk mindenki külön figyelmet
+              kap, egyedi igényeinek, adottságainak és képességeinek megfelelő
+              módosítási lehetőségekkel minden órán.
+            </p>
+          </div>
+          <div class="col" data-aos="fade-left">
+            <p class="text-center">
+              <img
+                src="css/images/2.png"
+                width="100"
+                alt="graphic of a coach"
+              />
+            </p>
+            <h5 class="text-info text-center mb-1">Minőségi eszközök</h5>
+            <p class="text-info text-center">
+              <br />A ROGUE a CrossFit partnere, egyben a termek legkedveltebb,
+              kiváló minőségű márkája. Nálunk is egy hatalmas Rogue
+              állványrendszer, valamint ROGUE rudak és tárcsák várnak minden
+              órán.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="container-fluid bg-dark pt-5">
+      <h5 class="crossfit fw-bold fs-5 mb-5 centered_h5">Rólunk írták</h5>
+      <div class="container w-75 pb-0">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide text-center carousel-dark text-bg-dark"
+          data-mdb-ride="carousel"
+        >
+          <div class="carousel-inner" style="min-height: 15rem">
+            <div class="carousel-item active">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">Gyuri</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Számomra nem csak egyszerűen egy edzőterem. Sokkal inkább
+                    egy nyitott baráti sportközösség, ahová hazajárok.
+
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">Erika</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Szuper hely, lelkes, kiváló és képzett edzők, nagyszerű
+                    közösség!
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">Dénes</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Kihívásos-komfort zóna elhagyós-remek hangulatú edzések.
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">Ani</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Örülök neki, hogy rátaláltam a CrossFit Miskolc edzőteremre.
+                    Felkészült, profi trénerek, szuper közösség.
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">Dani</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Legjobb hely a világon! A nyugtató terhelés helye.
+                    <br />Mindenkinek ajánlani tudom csak!
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">C. Zsófi</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Gyere, ha kell az endorfin.
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">Lili</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Körülbelül fél éve találtam rá a CrossFit Miskolc
+                    edzőtermére, teljesen kezdőként. Profi, segítőkész edzők, jó
+                    hangulat, változatos edzések, az izomláz garantált. Szívből
+                    ajánlom mindenkinek!
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">T. Anita</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Egy nehéz időszak után csatlakoztam a csapathoz, először
+                    csak hogy kimozduljak a kis világomból, azután felfedeztem
+                    az edzések által, hogy sokkal többet bírok és erősebb vagyok
+                    mind testben, mind lélekben, mint ahogy azt először
+                    gondoltam. Köszönöm Nektek mindezt!
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">Eszti</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Hozzáértő edzők, változatos és kihívásokkal teli edzések.
+                    Egyszerűen nem lehet megunni. Családias, barátokkal teli,
+                    összetartó közösség
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">H. Anita</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Mobility órán, kaptam a tanácsot, hogy a gumit mellig kell
+                    húzni. 🤣 Azóta csak a Crossfit. ÉLJEN a Mobility!!! 🥰😀
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <h5 class="mb-3 fst-italic">K. Zsófi</h5>
+
+                  <p class="text-bg-dark fst-italic">
+                    <i class="bi bi-quote"></i>
+                    Lassan 2 éve hogy elkezdtem a Crossfitet, nagyon hamar
+                    elkezdtem észrevenni a fejlődést. Az edzések változatosak és
+                    mindig tanul valami újat az ember😊 Ezt mindenkinek ki kell
+                    próbálnia! 😊
+                    <i class="bi bi-quote"></i>
+                  </p>
+                </div>
+              </div>
+              <ul
+                class="list-unstyled d-flex justify-content-center text-warning mb-0"
+              >
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+                <li><i class="bi bi-star-fill me-1"></i></li>
+              </ul>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-mdb-target="#carouselExampleControls"
+            data-mdb-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-lg-start bg-dark text-muted text-bg-dark">
+      <section class="">
+        <div
+          class="container-fluid text-center text-md-start text-bg-dark border-top border-primary"
+        >
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-1">
+              <h6 class="text-uppercase fw-bold mb-1">Nyitvatartás</h6>
+              <p>
+                Hétfő-szombat: órarendben szereplő órák időpontjában.
+                <br />Vasárnap: zárva
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
+              <h6 class="text-uppercase fw-bold mb-1">Kapcsolat</h6>
+              <p>
+                <i class="bi bi-house-fill me-1"></i> 3533 Miskolc, Fürdő utca
+                15.
+              </p>
+              <p>
+                <i class="bi bi-envelope-fill me-1"></i>
+                info@crossfitmiskolc.hu
+              </p>
+              <p>
+                <i class="bi bi-telephone-fill me-1"></i> Tel: + 36 70 731 4238
+              </p>
+              <p>
+                <a
+                  href="https://www.facebook.com/crossfitmiskolc"
+                  target="_blank"
+                  ><button class="btn btn-secondary me-2 btn_social">
+                    <i class="bi bi-facebook"></i></button
+                ></a>
+                <a
+                  href="https://www.instagram.com/crossfitmiskolc/"
+                  target="_blank"
+                  ><button class="btn btn-secondary btn_social">
+                    <i class="bi bi-instagram"></i></button
+                ></a>
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-1">
+              <h6 class="text-uppercase fw-bold mb-1">Térkép</h6>
+              <p>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.6119451685586!2d20.72630107515611!3d48.09842985388745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47409e4ae5821db9%3A0xcbbb9c641769a6db!2zTWlza29sYywgRsO8cmTFkSB1LiAxNSwgMzUzMw!5e0!3m2!1shu!2shu!4v1692626210471!5m2!1shu!2shu"
+                  width="150"
+                  height="150"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+$primary: #b92727;
+$navbar-dark-color: #dfb4b4;
+$navbar-dark-hover-color:#b92727;
+$font-family-base: 'Montserrat', sans-serif;
+$btn-border-radius: 30px;
+$light: rgb(240, 185, 40); 
+$secondary: rgb(142, 40, 40);
+$color-contrast-light: #dfb4b4;
+$headings-color:#fddddd;
+$card-border-width: 5px;
+$card-border-radius: 20px;
+$card-title-color: rgb(142, 40, 40);
+$card-color: #fddddd;
+$info: #fddddd;
+$success: #dfb4b4;
+$warning: #d4af37;
+$accordion-icon-color: #fddddd;
+$accordion-icon-active-color: white;
+$accordion-button-active-bg: rgb(142, 40, 40);
+$accordion-button-bg:rgb(39, 39, 39);
+
+::selection {
+    color: rgb(142, 40, 40);
+    background-color: rgb(250, 242, 242);
+}
+  
+h1{
+    padding-bottom:44vh;
+}
+.crossfit {
+    color: rgb(142, 40, 40);
+    background-color: #dfb4b4;
+    border-radius: 10px;
+    padding: 1px 3px;     
+}
+
+.border_cfm {
+    border-width: 2px !important;
+    box-shadow: 0 0 15px rgb(142, 40, 40) !important;
+}
+
+.border_cfm_2 {
+    border-width: 0 !important;
+    box-shadow: 0 0 15px rgb(20, 20, 20) !important;
+}
+
+#btn_sign_in {
+    color: #fddddd;
+    box-shadow: 0 0 5px rgb(142, 40, 40, 0.7) !important;
+}
+
+#btn_freetrial {
+    box-shadow: 0 0 10px rgb(240, 185, 40) !important;
+}
+
+.btn_social {
+    border-radius: 10px !important;
+}
+
+#navbar_border_width {
+    border-bottom-width: 1px !important;
+}
+
+
+.english_link {
+    color:  #fddddd;
+    text-decoration-color:  #fddddd;
+}
+
+.english_link:hover {
+    color: #b92727;
+    text-decoration-color: #b92727;
+}
+
+.dropin_link:hover {
+    color: #b92727;
+    
+}
+
+.centered_h5 {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 250px;
+}
+
+.grow { transition: all .2s ease-in-out !important; }
+.grow:hover { transform: scale(1.06) !important; }
+
+.grow_price_plan { transition: all .2s ease-in-out !important; }
+.grow_price_plan:hover { transform: scale(1.1) !important; }
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='Red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='Red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev-icon:after {
+    content: none !important;
+}
+
+.carousel-control-next-icon:after {
+    content: none !important;
+}
+
+.fs_button {
+    font-size: 0.8rem !important;
+}
+
+.no-line-break {
+    white-space: nowrap;
+}
+
+.plan_title {
+    margin-left: 35px !important;
+    border-radius: 20px 0 0 20px;
+    padding: 10px 10px 10px 15px;
+    font-size: 1.2rem !important;
+}
+
+.plan_card {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    background-image: url('css/images/card_bg.webp') !important;
+}
+
+#widget{
+    width: 90%;
+}
+
+.spin {
+    animation: flipdiv 3s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flipdiv {
+    
+    50%, 100% {
+        transform: rotateY(360deg);
+    }
+    
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
