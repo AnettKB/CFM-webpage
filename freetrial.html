@@ -120,13 +120,17 @@
         <a class="dropin_link" href="drop-in.html"> Drop in</a> menüpontban vedd
         fel velünk a kapcsolatot.
       </p>
-      <form action="mailto.php" method="post">
+      <form
+        action="https://formsubmit.co/b940041c32b9197848fe05fbf99d5290"
+        method="POST"
+      >
         <div class="mb-3">
           <label for="inputEmail3" class="mb-3 col-form-label"
             >E-mail címed:</label
           >
           <div class="col-6">
             <input
+              required
               type="email"
               name="email"
               class="form-control form-control-sm"
@@ -139,6 +143,8 @@
           <label for="name" class="mb-3 col-form-label">Neved:</label>
           <div class="col-6">
             <input
+              required
+              maxlength="100"
               type="text"
               class="form-control form-control-sm"
               name="name"
@@ -150,74 +156,28 @@
           <div class="col-6">
             <input
               type="text"
+              maxlength="20"
               class="form-control form-control-sm"
               name="number"
             />
           </div>
         </div>
         <fieldset class="mb-3">
-          <legend class="col-form-label mb-3 pt-0">
+          <legend class="col-form-label mb-1 mt-5 pt-0">
             Mely napok alkalmasak neked?
           </legend>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="hétfő"
-                id="flexCheckDefault"
-                name="days[]"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                hétfő
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="kedd"
-                name="days[]"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                kedd
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="szerda"
-                name="days[]"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                szerda
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="csütörtök"
-                name="days[]"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                csütörtök
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value="péntek"
-                name="days[]"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                péntek
-              </label>
-            </div>
+          <div class="form-label">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              name="message"
+              type="text"
+              maxlength="400"
+            ></textarea>
           </div>
+
           <div class="container text-center mt-5">
             <div class="row align-items-end">
               <div class="col">
