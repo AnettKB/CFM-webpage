@@ -130,10 +130,17 @@ h1{
 #widget{
     width: 90%;
 }
-
+ 
 .spin {
     animation: flipdiv 3s infinite;
     animation-timing-function: ease-in-out;
+}
+
+@media (min-width: 1900px) {
+    #main_animation {
+        padding-top: 500px;
+        padding-bottom: 300px;
+    }
 }
 
 @keyframes flipdiv {
